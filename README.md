@@ -1,4 +1,4 @@
-# gulp
+# exchanger
 
 ## :fire: Особенности
 * именование классов по [БЭМ](https://ru.bem.info/)
