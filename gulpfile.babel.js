@@ -33,16 +33,16 @@ const requireDir = require("require-dir"),
         },
         images: {
             src: [
-                "./src/img/**/*.{jpg,jpeg,png,gif,tiff,svg}",
-                "!./src/img/favicon/*.{jpg,jpeg,png,gif,tiff}"
+                "./src/images/**/*.{jpg,jpeg,png,gif,tiff,svg}",
+                "!./src/images/favicon/*.{jpg,jpeg,png,gif,tiff}"
             ],
-            dist: "./dist/img/",
-            watch: "./src/img/**/*.{jpg,jpeg,png,gif,svg,tiff}"
+            dist: "./dist/images/",
+            watch: "./src/images/**/*.{jpg,jpeg,png,gif,svg,tiff}"
         },
         sprites: {
-            src: "./src/img/sprites/*.svg",
-            dist: "./dist/img/sprites/",
-            watch: "./src/img/sprites/*.svg"
+            src: "./src/images/icons/*.svg",
+            dist: "./dist/images/icons/",
+            watch: "./src/images/icons/*.svg"
         },
         fonts: {
             src: "./src/fonts/**/*.{woff,woff2}",
@@ -50,8 +50,8 @@ const requireDir = require("require-dir"),
             watch: "./src/fonts/**/*.{woff,woff2}"
         },
         favicons: {
-            src: "./src/img/favicon/*.{jpg,jpeg,png,gif}",
-            dist: "./dist/img/favicons/",
+            src: "./src/images/favicon/*.{jpg,jpeg,png,gif}",
+            dist: "./dist/images/favicons/",
         },
         gzip: {
             src: "./src/.htaccess",

@@ -14,7 +14,7 @@ $(".faq__item").on("click", function () {
     // Get image for active question
     var img = $(this).children(".faq__icon");
     // Remove the 'rotate' class for all images except the active 
-    $("img").not(img).removeClass("rotate");
+    $("images").not(img).removeClass("rotate");
 
     // Toggle Rotate Class
     img.toggleClass("rotate");
