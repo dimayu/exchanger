@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>gulp-scss-starter</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="images/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="images/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="images/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="images/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="images/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="images/favicons/apple-touch-icon-1024x1024.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="wrapper">
+        <div class="header__items">
+            <div class="header__items__item">
+                <a href="index.html" class="header__items__item--logo">
+                    <span>N<span class="green">i</span>xExchange</span>
+                </a>
+            </div>
+            <nav class="header__items__item header__items__item--nav">
+                <ul class="header__items__item--menu">
+                    <li><a href="exchange.html" class="active">Как обменивать?</a></li>
+                    <li><a href="#">Курс валют</a></li>
+                    <li><a href="#">Обмен валют</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header__items__item">
+                <a href="tel:+7 123 456 7890" class="header__items__item--phone">
+                    <svg>
+                        <use xlink:href="images/icons/sprite.svg#phone"></use>
+                    </svg>
+                    <span>+7 123 456 7890</span>
+                </a>
+            </div>
+            <div class="mobile-nav-button">
+                <div class="mobile-nav-button__line"></div>
+                <div class="mobile-nav-button__line"></div>
+                <div class="mobile-nav-button__line"></div>
+            </div>
+        </div>
+        <nav class="mobile-menu">
+            <ul>
+                <li><a href="exchange.html">Как обменивать?</a></li>
+                <li><a href="#">Курс валют</a></li>
+                <li><a href="#">Обмен валют</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+            <a href="tel:+7 123 456 7890" class="phone">
+                <svg>
+                    <use xlink:href="images/icons/sprite.svg#phone"></use>
+                </svg>
+                <span>+7 123 456 7890</span>
+            </a>
+        </nav>
+    </div>
+    <div class="bg"></div>
+</header>
+
+<main class="main">
+    <div class="wrapper">
+        <div class="content">
+            <h1 class="h2">Как обменивать?</h1>
+            <div class="h3">
+                <div class="number">1</div>
+                <h3>Выбор направления обмена</h3>
+            </div>
+            <p>Выберите в левой части страницы платёжную систему или банк деньги из которого Вы хотите обменять. Затем
+                выберите в правой части страницы банк или платёжную систему, на счёт которой хотите получить деньги в
+                результате обмена, сделав клик по нужной иконке.</p>
+            <div class="h3">
+                <div class="number">2</div>
+                <h3>Ввод данных для обмена</h3>
+            </div>
+            <p>После выбора направления для обмена средств вы попадаете на страницу оформления заявки на обмен.
+                Необходимо заполнить все поля!</p>
+            <ol>
+                <li>Введите сумму в поле "Отдаёте" которую хотите обменять и наш калькулятор автоматически посчитает
+                    сумму, которую Вы получите при обмене в поле "Получаете".
+                </li>
+                <li>Если же Вам нужна какая-то определённая сумма в результате обмена, то укажите её в поле "Получаете"
+                    и наш калькулятор сразу же подсчитает какая сумма Вам необходима для обмена в поле "Отдаёте".
+                </li>
+                <li>В поле "ВАШ E-MAIL" укажите Ваш действующий адрес электронной почты, на него придёт код для создания
+                    заявки на обмен. На каждом этапе обмена на электронную почту будут приходит реквизиты и уведомления
+                    об изменении статуса вашей заявки.
+                </li>
+                <li>В поле "Контактный телефон" укажите Ваш действующий номер телефона. Для обменов связанных с банками
+                    необходимо указывать телефон, к которому привязана карта банка! Номер телефона нужен на случай, если
+                    оператору необходимо будет связаться с Вами.
+                </li>
+                <li>Далее в полях для реквизитов необходимо указать реквизиты, с которых будет производиться оплата
+                    заявки и на которые Вам необходимо получить перевод. Для направлений, связанных с банковскими
+                    картами, необходимо указать также ФИО владельца карты.
+                </li>
+                <li>Далее Вам необходимо ознакомиться с пользовательским соглашением и поставить галочку напротив "Я
+                    принимаю условия соглашения".
+                </li>
+                <li>После чего нажмите кнопку продолжить.</li>
+            </ol>
+            <div class="h3">
+                <div class="number">3</div>
+                <h3>Проверка введённых данных и подтверждение обмена</h3>
+            </div>
+            <p>После того как Вы нажали на кнопку "Продолжить" Вы попадаете на страницу подтверждения обмена. На неё
+                написаны указанные ранее реквизиты, проверьте их ещё раз. Если допущена ошибка при заполнении формы, то
+                нажмите отмена, а если всё заполнено правильно, то переходим к созданию заявки. Для этого Вам необходимо
+                ввести в поле "PIN-КОД" числовой код, который отправлен Вам в письме на указанный ранее Email (если
+                письмо долго не приходит, то проверьте папку СПАМ). В поле с правой стороны "Текст с картинки"
+                необходимо указать набор цифр указанный на картинке рядом. После заполнения этих двух полей нажимаем на
+                кнопку "Продолжить" и переходим к оплате заявки.</p>
+            <div class="h3">
+                <div class="number">4</div>
+                <h3>Оплата заявки</h3>
+            </div>
+            <p>В случае если происходит обмен по направлению "с платёжной системы на платёжную систему", то Вам
+                достаточно нажать кнопку "Оплатить" после чего Вы будете автоматически переброшены на страницу оплаты в
+                платёжной системе.</p>
+            <p>Если же обмен происходит по направлению "с банковской карты на платёжную систему, другую карту либо
+                пополнение счета на бирже " или "с биржевого счёта на платёжную систему или банковскую карту", то
+                необходимо вручную совершить перевод по указанным реквизитам.</p>
+            <div class="warning">
+                <div class="icon">!</div>
+                <div>Важно: если требуется указать комментарий к переводу, то необходимо указывать в точности, как указано
+                    на странице!</div>
+            </div>
+            <div class="warning">
+                <div class="icon">!</div>
+                <div>Важно: сумма которую Вы переводите должна быть точно такой, какая была указана в поле "Отдаю" без
+                    учёта комиссии!</div>
+            </div>
+            <p>Если Вы делали перевод вручную, то после оплаты необходимо нажать на кнопку "Я оплатил", если обмен
+                произошёл при переводе в мерчанте платёжной системы, то Вы автоматически попадёте на страницу заявки, на
+                которой сможете отслеживать её статус.</p>
+            <div class="h3">
+                <h3>В случае оплаты с банковской карты</h3>
+            </div>
+            <p>Если Вы совершили обмен по направлению связанным с переводом с банковской карты и это первый подобный
+                обмен, то Вам необходимо пройти верификацию.</p>
+            <p>Обменному сервису необходимо удостовериться, что карта принадлежит Вам. По этому в случае первого обмена
+                с участием данной карты Вы будете переброшены на страницу верификации после нажатия на кнопку "Я
+                оплатил". Вам будет необходимо сфотографировать Вашу банковскую карту на фоне заявки на мониторе (для
+                этого на экране будет отведена специальная область). </p>
+            <div class="warning">
+                <div class="icon">!</div>
+                <div>Важно: при фотографии карты Вам необходимо сфотографировать только сторону с номером карты и при этом
+                    Вы можете закрыть чать номера карты и срок обращения карты! Если на Вашей карте все данные указаны
+                    на одной стороне, то Вам необходимо закрыть ещё и CVV код (3 цифры).</div>
+            </div>
+            <p>После того, как Вы сфотографировали карту снимок необходимо отправить на почту <a href="mailto:support@nixexchange.com">support@nixexchange.com</a>, в письме необходимо указать номер Вашей заявки на обмен.
+            </p>
+            <p>Срок верификации составляет не более 30 минут, в случае возникновения вопросов с Вами свяжется оператор
+                по указанному контактному телефону. Если в течение 30 минут верификация не прошла и Вам не позвонили, то
+                обратитесь в наш Чат на сайте для оперативного решения вопроса.</p>
+            <h3 class="center">Спасибо, что выбрали наш обменный пункт!</h3>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="wrapper">
+        <div class="footer__items">
+            <a href="index.html" class="logo">
+                <span>N<span class="green">i</span>xExchange</span>
+            </a>
+            <a href="mailto:support@nixexchange.com">
+                <svg class="icon">
+                    <use xlink:href="images/icons/sprite.svg#mail"></use>
+                </svg>
+                <span>support@nixexchange.com</span>
+            </a>
+            <a href="">
+                <svg class="icon">
+                    <use xlink:href="images/icons/sprite.svg#telegram"></use>
+                </svg>
+                <span>nixexchange_bot</span>
+            </a>
+            <a href="tel:+7 123 456 7890">
+                <svg class="icon">
+                    <use xlink:href="images/icons/sprite.svg#phone"></use>
+                </svg>
+                <span>+7 123 456 7890</span>
+            </a>
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>

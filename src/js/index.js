@@ -8,28 +8,90 @@ $(document).ready(function () {
 
         // Toggles a class that slides the menu into view on the screen
         $('.mobile-menu').toggleClass('mobile-menu--open');
+        $('.header').toggleClass('header-bg');
         return false;
     });
 
     //selects
-    const selectSingle = document.querySelector('.select');
-    const selectSingle_title = selectSingle.querySelector('.select__title');
-    const selectSingle_labels = selectSingle.querySelectorAll('.select__label');
+    $('.select').each(function () {
+        const _this = $(this),
+            selectOption = _this.find('option'),
+            selectOptionLength = selectOption.length,
+            selectedOption = selectOption.filter(':selected'),
+            duration = 450; // длительность анимации
 
-    // Toggle menu
-    selectSingle_title.addEventListener('click', () => {
-        if ('active' === selectSingle.getAttribute('data-state')) {
-            selectSingle.setAttribute('data-state', '');
-        } else {
-            selectSingle.setAttribute('data-state', 'active');
+        _this.hide();
+        _this.wrap('<div class="select"></div>');
+        $('<div>', {
+            class: 'new-select',
+            text: _this.children('option:disabled').text()
+        }).insertAfter(_this);
+
+        const selectHead = _this.next('.new-select');
+        $('<div>', {
+            class: 'new-select__list'
+        }).insertAfter(selectHead);
+
+        const selectList = selectHead.next('.new-select__list');
+        for (let i = 1; i < selectOptionLength; i++) {
+            $('<div>', {
+                class: 'new-select__item',
+                html: $('<span>', {
+                    text: selectOption.eq(i).text()
+                })
+            })
+                .attr('data-value', selectOption.eq(i).val())
+                .appendTo(selectList);
         }
-    });
 
-    // Close when click to option
-    for (let i = 0; i < selectSingle_labels.length; i++) {
-        selectSingle_labels[i].addEventListener('click', (evt) => {
-            selectSingle_title.textContent = evt.target.textContent;
-            selectSingle.setAttribute('data-state', '');
+        const selectItem = selectList.find('.new-select__item');
+        selectList.slideUp(0);
+        selectHead.on('click', function () {
+            if (!$(this).hasClass('on')) {
+                $(this).addClass('on');
+                selectList.slideDown(duration);
+
+                selectItem.on('click', function () {
+                    let chooseItem = $(this).data('value');
+
+                    $('select').val(chooseItem).attr('selected', 'selected');
+                    selectHead.text($(this).find('span').text());
+
+                    selectList.slideUp(duration);
+                    selectHead.removeClass('on');
+                });
+
+            } else {
+                $(this).removeClass('on');
+                selectList.slideUp(duration);
+            }
         });
-    }
+
+
+        let clickId = 0;
+
+        $('.next').on('click', function (event) {
+            event.preventDefault();
+            if (clickId < 3) {
+                clickId ++;
+                valueItem = ($(this).parent().prev().children('.new-select__list').children('.new-select__item:nth-child(' + clickId + ')'));
+                ($(this).parent().prev().children('.new-select')).text($(valueItem).find('span').text());
+                let chooseItem = $(this).data('value');
+                $('select').val(chooseItem).attr('selected', 'selected');
+            }
+        });
+
+
+        $('.prev').on('click', function (event) {
+            event.preventDefault();
+            if (clickId > 1) {
+                clickId --;
+                valueItem = ($(this).parent().prev().children('.new-select__list').children('.new-select__item:nth-child(' + clickId + ')'));
+                ($(this).parent().prev().children('.new-select')).text($(valueItem).find('span').text());
+                let chooseItem = $(this).data('value');
+                $('select').val(chooseItem).attr('selected', 'selected');
+            }
+        });
+
+    });
 });
