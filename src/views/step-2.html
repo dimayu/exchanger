@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>gulp-scss-starter</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="images/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="images/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="images/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="images/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="images/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="images/favicons/apple-touch-icon-1024x1024.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+
+
+<!--        HEADER       -->
+<header class="header">
+    <div class="wrapper">
+        <div class="header__items">
+            <div class="header__items__item">
+                <a href="index.html" class="header__items__item--logo">
+                    <span>N<span class="green">i</span>xExchange</span>
+                </a>
+            </div>
+            <nav class="header__items__item header__items__item--nav">
+                <ul class="header__items__item--menu">
+                    <li><a href="exchange.html">Как обменивать?</a></li>
+                    <li><a href="#">Курс валют</a></li>
+                    <li><a href="#">Обмен валют</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header__items__item">
+                <a href="tel:+7 123 456 7890" class="header__items__item--phone">
+                    <svg>
+                        <use xlink:href="images/icons/sprite.svg#phone"></use>
+                    </svg>
+                    <span>+7 123 456 7890</span>
+                </a>
+            </div>
+            <div class="mobile-nav-button">
+                <div class="mobile-nav-button__line"></div>
+                <div class="mobile-nav-button__line"></div>
+                <div class="mobile-nav-button__line"></div>
+            </div>
+        </div>
+        <nav class="mobile-menu">
+            <ul>
+                <li><a href="exchange.html">Как обменивать?</a></li>
+                <li><a href="#">Курс валют</a></li>
+                <li><a href="#">Обмен валют</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+            <a href="tel:+7 123 456 7890" class="phone">
+                <svg>
+                    <use xlink:href="images/icons/sprite.svg#phone"></use>
+                </svg>
+                <span>+7 123 456 7890</span>
+            </a>
+        </nav>
+    </div>
+    <div class="bg"></div>
+</header>
+
+<main class="main main__step-2">
+    <div class="wrapper">
+        <div class="content">
+            <h1 class="h2">Подтверждение обмена</h1>
+            <div class="block">
+                <h3>Персональные данные</h3>
+                <div class="block__items">
+                    <div class="block__items__item">ФИО</div>
+                    <div class="block__items__item">Максимов Максим Максимович</div>
+                </div>
+                <div class="block__items">
+                    <div class="block__items__item">E-mail</div>
+                    <div class="block__items__item">MAKSI083@YANDEX.RU</div>
+                </div>
+                <div class="block__items">
+                    <div class="block__items__item">Телефон</div>
+                    <div class="block__items__item">+79830737425</div>
+                </div>
+            </div>
+            <div class="warning">
+                <div class="icon">!</div>
+                <div>Важно: внимательно проверьте ваши введённые данные</div>
+            </div>
+            <div class="block">
+                <h3>Отдаете</h3>
+                <div class="block__items">
+                    <div class="block__items__item">Perfect Money USD</div>
+                    <div class="block__items__item red">150.00</div>
+                </div>
+                <div class="block__items">
+                    <div class="block__items__item">Номер счета</div>
+                    <div class="block__items__item">U84958475</div>
+                </div>
+            </div>
+            <div class="block">
+                <h3>Получаете</h3>
+                <div class="block__items">
+                    <div class="block__items__item">Номер карты</div>
+                    <div class="block__items__item">4890494742413388</div>
+                </div>
+                <div class="block__items">
+                    <div class="block__items__item">Сбербанк RUB</div>
+                    <div class="block__items__item green">10472.00</div>
+                </div>
+            </div>
+            <div class="warning">
+                <div class="icon">!</div>
+                <div>Вам на e-mail отправлен PIN- код для подтверждения работоспособности вашего e- mail адреса
+                    Пожалуйста введите этот PIN- код в поле, раположенное ниже: ( если Вы не увидели письма- проверьте
+                    папку" спам")
+                </div>
+            </div>
+            <form action="" class="form">
+                <div class="input-block">
+                    <p>Введите PIN-код:</p>
+                    <div class="input-block__items">
+                        <input type="text" name="" id="" placeholder="" class="form-input">
+                    </div>
+                </div>
+                <div class="form__items">
+                    <div class="input-block">
+                        <p>Введите код с картинки:</p>
+                        <div class="input-block__items">
+                            <input type="text" name="" id="" placeholder="" class="form-input">
+                        </div>
+                    </div>
+                    <div class="form__items__item">
+                        <div class="h2">1234</div>
+                    </div>
+                </div>
+                <button class="btn">Продолжить</button>
+            </form>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="wrapper">
+        <div class="footer__items">
+            <a href="index.html" class="logo">
+                <span>N<span class="green">i</span>xExchange</span>
+            </a>
+            <a href="mailto:support@nixexchange.com">
+                <svg class="icon">
+                    <use xlink:href="images/icons/sprite.svg#mail"></use>
+                </svg>
+                <span>support@nixexchange.com</span>
+            </a>
+            <a href="">
+                <svg class="icon">
+                    <use xlink:href="images/icons/sprite.svg#telegram"></use>
+                </svg>
+                <span>nixexchange_bot</span>
+            </a>
+            <a href="tel:+7 123 456 7890">
+                <svg class="icon">
+                    <use xlink:href="images/icons/sprite.svg#phone"></use>
+                </svg>
+                <span>+7 123 456 7890</span>
+            </a>
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>
